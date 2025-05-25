@@ -1,0 +1,8 @@
+.VBtns {
+    background-color: var(--alt-color) !important;
+    font-weight: 600;
+    border: 5px solid transparent;
+    padding: 7px 14px;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+}
