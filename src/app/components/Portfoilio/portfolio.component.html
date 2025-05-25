@@ -1,0 +1,24 @@
+<section class="container px-5">
+    <h1 class="fw-bolder fs-2 text-uppercase py-3 myPad text-center">portfolio component</h1>
+    <div class="myStar mb-2 m-auto">
+        <span class="line"></span>
+        <i class=" star fa-solid fa-star"></i>
+        <span class="line"></span>
+    </div>
+    <div class="container py-4 px-5">
+        <div class="row g-4">
+            @for (src of imgSrc; track $index) {
+            <div role="button" class="col-md-4 col-sm-6">
+                <div (click)="isHidden = false ; modelImg = src" class="card border-0 image-container">
+                    <img class="position-relative rounded" [src]="src" alt="Wooden-House">
+                    <div class="hover-layer">+</div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    <div (click)="hideModel( $event.target , eleImg)" [class.d-none]="isHidden"
+        class="myModel position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+        <img #eleImg [src]="modelImg" alt="Model-Img">
+    </div>
+</section>

@@ -1,0 +1,36 @@
+/* .myVH {
+    height: 95vh;
+} */
+
+.p-85 {
+    padding: 85px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+/*~ ------------------------------------- ~*/
+
+.myStar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.line {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.star {
+    color: #fff;
+    font-size: 15px;
+}

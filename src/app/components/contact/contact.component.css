@@ -1,0 +1,35 @@
+.myStar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.line {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.star {
+    color: #000000;
+    font-size: 15px;
+}
+
+/*-------- ---------*/
+input.form-control:focus {
+    box-shadow: none;
+}
+
+.myTop {
+    top: 40px !important;
+}
+
+label {
+    transition: 0.6s top;
+}
+
+.myLab {
+    color: var(--main-color);
+}
